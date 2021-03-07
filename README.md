@@ -1,6 +1,2 @@
 # alarm
-Just a simple alarm
-
-### Dependencies
-
-ffmpeg
+Just a simple alarm. The only dependency is '''ffmpeg'''.
