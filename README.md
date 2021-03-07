@@ -1,6 +1,6 @@
 # alarm
 Just a simple alarm
 
-## Dependencies:
+### Dependencies
 
 ffmpeg
