@@ -1,18 +1,18 @@
 #!/bin/bash
 
-printf "How long until you need the alarm to go off?\nExamples: 2d, 1h, 30m, 5s\n"
+printf "How long until you need the timer to go off?\nExamples: 2d, 1h, 30m, 5s\n"
 
 read time
 
-printf "Alarm activated\n"
+printf "Timer activated\n"
 sleep $time
 
 repeat() {
     n=$1
     shift
-    for i in $( seq $n ); do
+    for ((i=1; i<=n; i++)) {
       $@
-    done
+    }
 }
 
 x=0
@@ -24,4 +24,4 @@ done
 
 date=$(date "+on %A, at %T")
 
-printf "The alarm went off $( echo $date )\n"
+printf "The timer went off $( echo $date )\n"
